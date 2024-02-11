@@ -5,7 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Windows;
 
-namespace CS_BS
+namespace Cows_and_Bulls
 {
     /// <summary>
     /// Interaction logic for App.xaml

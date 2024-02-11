@@ -5,7 +5,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace CS_BS
+namespace Cows_and_Bulls
 {
     public class CBScore
     {
@@ -28,23 +28,23 @@ namespace CS_BS
         int DuplicateWordScore = -20;
         int TryScore = -50;
 
-        Char Mode = 'E';
-        String TheWord = "TEMP";
-        String TheGuessedWord = "";
+        char Mode = 'E';
+        string TheWord = "TEMP";
+        string TheGuessedWord = "";
 
-        String ComboBoxName = "CBG";
-        String TextBoxName = "GuessTxt";
-        String LblName = "GuessCBLbl";
+        string ComboBoxName = "CBG";
+        string TextBoxName = "GuessTxt";
+        string LblName = "GuessCBLbl";
 
-        String CBMsg = "";
-        String DisplayMsgTxt = "This will Display the Text Generated During CB\nScore : 500";
-        String DuplicateChar = "You have Entered One/More Duplicate Characters. Please Guess Again.";
-        String DuplicateWord = "You have Entered this Word Before. Please Select a Different Word.";
-        String GameEndMsg = "Shai!! Shai!! Tch!! Tch!! You could not Solve Even such a Easy Word!!!!\n Anyways The Word is : ";
-        String GameOverMsg = "Game Over!!";
-        String QuitMsg = "Loser!!!! Haven't you heard the Phrase 'Quitters never Win and Winners never Quit'. \n Anyways the Word is : ";
-        String VictoryMsg = "Congratulations!!! That's the Correct Word!!!";
-        String ZeroScoreMsg = "You have hit Rock Bottom!!!!\tIts Zero Score!!!\nYour Game will be terminated at this Point.\n\n\"Nice Try\"\nYes,That was Sarcastic.\n\n Anyways the Word is : ";
+        string CBMsg = "";
+        string DisplayMsgTxt = "This will Display the Text Generated During CB\nScore : 500";
+        string DuplicateChar = "You have Entered One/More Duplicate Characters. Please Guess Again.";
+        string DuplicateWord = "You have Entered this Word Before. Please Select a Different Word.";
+        string GameEndMsg = "Shai!! Shai!! Tch!! Tch!! You could not Solve Even such a Easy Word!!!!\n Anyways The Word is : ";
+        string GameOverMsg = "Game Over!!";
+        string QuitMsg = "Loser!!!! Haven't you heard the Phrase 'Quitters never Win and Winners never Quit'. \n Anyways the Word is : ";
+        string VictoryMsg = "Congratulations!!! That's the Correct Word!!!";
+        string ZeroScoreMsg = "You have hit Rock Bottom!!!!\tIts Zero Score!!!\nYour Game will be terminated at this Point.\n\n\"Nice Try\"\nYes,That was Sarcastic.\n\n Anyways the Word is : ";
 
         Hashtable GuessChars = new Hashtable();
         Hashtable GuessedWordsList = new Hashtable();

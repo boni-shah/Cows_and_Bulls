@@ -1,24 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
-namespace CS_BS
+namespace Cows_and_Bulls
 {
     /// <summary>
     /// Interaction logic for NewGameDialog.xaml
     /// </summary>
     public partial class NewGameDialog : Window
     {
-        public Char DifficultyLevel = new char();
+        public char DifficultyLevel = new char();
         public int ProperRun = 0;
 
         public NewGameDialog()
@@ -43,13 +32,13 @@ namespace CS_BS
                 DifficultyLevel = 'M';
             else if (GameDifficulty.SelectedIndex == 2)
                 DifficultyLevel = 'D';
-            this.Close();
+            Close();
         }
 
         private void Cancel(object sender, RoutedEventArgs e)
         {
             ProperRun = 0;
-            this.Close();
+            Close();
         }
     }
 }

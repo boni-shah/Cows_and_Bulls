@@ -8,8 +8,8 @@
     <ProjectGuid>{AD8BD5E3-3F53-444B-BBBA-06B978F3CFD3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CS_BS</RootNamespace>
-    <AssemblyName>CS_BS</AssemblyName>
+    <RootNamespace>Cows_and_Bulls</RootNamespace>
+    <AssemblyName>Cows_and_Bulls</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>

@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CS_BS
+namespace Cows_and_Bulls
 {
     class WordSelect
     {
         
 
-        public static String GenerateWord(Char M)
+        public static string GenerateWord(char M)
         {
-            String TheWord = "";
+            string TheWord = "";
 
             if (M == 'E')
                 TheWord = GenerateEasyWord();
@@ -22,11 +22,11 @@ namespace CS_BS
 
             return TheWord;
         }
-        protected static String GenerateEasyWord()
+        protected static string GenerateEasyWord()
         {
             Random r = new Random();
 
-            String EasyList = "able,aced,aces,ache,acid,acre,acts,aged,ages,ahem,aids,ails,aims,airs,ales,alms,alps,amen,amid,amps,ands,anew,ante,";
+            string EasyList = "able,aced,aces,ache,acid,acre,acts,aged,ages,ahem,aids,ails,aims,airs,ales,alms,alps,amen,amid,amps,ands,anew,ante,";
             EasyList += "anti,ants,aped,apes,arid,arms,army,arts,atom,atop,aunt,awed,awes,axes,back,bade,bags,bail,bait,bake,bald,bale,balm,band,bang,";
             EasyList += "bank,bans,bark,barn,bars,base,bash,bath,bats,bead,beak,beam,bean,bear,beat,beds,begs,belt,bend,bent,best,bets,bids,bike,bind,";
             EasyList += "bins,bird,bite,blew,blow,blue,blur,boat,body,boil,bold,bolt,bond,bone,bore,born,bots,bowl,bows,brat,bred,buds,bugs,bulk,bump,";
@@ -48,17 +48,17 @@ namespace CS_BS
             EasyList += "trip,trod,tubs,tune,turn,tyre,vase,vast,vine,wags,wake,walk,wand,want,ward,ware,warm,warn,wars,wash,wave,weak,wear,went,wife,";
             EasyList += "wind,wine,wing,wink,wise,wish,word,wore,work,worm,worn";
 
-            String[] EasyWordListArray = EasyList.Split(',');
+            string[] EasyWordListArray = EasyList.Split(',');
             
             int num = r.Next(0, 509);
             return (EasyWordListArray[num].ToUpper());                        
         }
 
-        protected static String GenerateMediumWord()
+        protected static string GenerateMediumWord()
         {
             Random r = new Random();
 
-            String MedList = "abed,ably,achy,acme,acne,ahoy,airy,akin,also,alto,alum,amis,amok,amyl,apex,arch,arcs,arse,arty,ashy,auto,aves,awns,axed,";
+            string MedList = "abed,ably,achy,acme,acne,ahoy,airy,akin,also,alto,alum,amis,amok,amyl,apex,arch,arcs,arse,arty,ashy,auto,aves,awns,axed,";
             MedList += "axel,axis,axle,baht,balk,bane,bard,bare,bask,bays,beta,bias,bide,bile,bits,blah,blam,bled,blot,boar,bogs,bong,both,bout,boys,brag,";
             MedList += "bray,brew,brim,bros,brow,buck,bums,bunk,burn,bury,bust,busy,byte,cafe,cagy,calf,cane,cape,case,cave,caws,cent,chap,char,chef,chin,";
             MedList += "chit,chug,chum,cine,cite,city,clad,clam,clan,claw,clay,clog,clot,coal,coax,cogs,coir,cola,coma,cons,cope,copy,cork,cosy,cram,crap,";
@@ -84,17 +84,17 @@ namespace CS_BS
             MedList += "vice,view,vile,visa,vise,volt,vote,vows,wade,wage,wail,wait,warp,wasp,wavy,welt,wept,west,what,when,whip,whom,wide,wild,wimp,wipe,";
             MedList += "wire,wisp,with,woke,wolf,womb,wove,wrap,yard,yarn,yawn,year,yolk,your,yowl,yuan,yuck,zaps,zeta,zips,zone";
 
-            String[] MedWordListArray = MedList.Split(',');
+            string[] MedWordListArray = MedList.Split(',');
 
             int num = r.Next(0, 643);
             return (MedWordListArray[num].ToUpper());             
         }
 
-        protected static String GenerateDifficultWord()
+        protected static string GenerateDifficultWord()
         {
             Random r = new Random();
 
-            String ToughList = "abet,aeon,aero,ague,aide,aloe,avid,avow,awry,ayin,bach,barf,baud,bevy,bier,bios,blip,bloc,bode,bony,boxy,bran,brie,brig,";
+            string ToughList = "abet,aeon,aero,ague,aide,aloe,avid,avow,awry,ayin,bach,barf,baud,bevy,bier,bios,blip,bloc,bode,bony,boxy,bran,brie,brig,";
             ToughList += "buoy,byre,calk,capo,carb,carp,cask,ceil,chao,chez,chow,ciao,clef,coda,coed,coif,colt,cory,coup,cove,cozy,crud,crux,cusp,cyan,cyst,";
             ToughList += "czar,daft,daub,deli,dibs,dike,doer,dole,dolt,dork,doth,dour,duce,duma,duos,dupe,dura,dyke,dyne,eaux,edgy,egad,envy,eons,epic,epos,";
             ToughList += "ergo,ergs,eros,erst,etas,expo,fain,faux,feud,fibs,fido,five,flax,flay,flea,flex,flit,flue,flux,foal,four,fowl,foxy,fray,fret,fuji,";
@@ -108,8 +108,8 @@ namespace CS_BS
             ToughList += "tofu,toga,tome,tong,trio,tsar,tuba,twas,tyke,typo,tyro,tzar,ulna,unto,urea,ursa,vale,veal,vent,verb,very,veto,vide,vied,void,wart,";
             ToughList += "wary,waxy,weal,wean,wham,whet,whey,whim,whoa,wick,wilt,wily,wiry,wist,writ,xyst,yang,yeah,yelp,yeti,yoga,yogi,yoke,yore,zeal,zero,";
             ToughList += "zest,zinc,zing";
-            
-            String[] ToughWordListArray = ToughList.Split(',');
+
+            string[] ToughWordListArray = ToughList.Split(',');
 
             int num = r.Next(0, 339);
             return (ToughWordListArray[num].ToUpper());

@@ -11,7 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace CS_BS
+namespace Cows_and_Bulls
 {
     /// <summary>
     /// Interaction logic for HelpForm.xaml

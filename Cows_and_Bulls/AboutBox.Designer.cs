@@ -1,4 +1,4 @@
-﻿namespace CS_BS
+﻿namespace Cows_and_Bulls
 {
     partial class AboutBox
     {
